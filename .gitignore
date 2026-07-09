@@ -3,3 +3,5 @@ wildflower current website.png
 wilflower logo.webp
 .impeccable/
 .DS_Store
+.vercel
+.env*
