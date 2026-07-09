@@ -1,10 +1,10 @@
 /* ===========================================================
-   Wild Flower Regenerative Health — Design Tokens
+   Wildflower Regenerative Health — Design Tokens
    Palette carried over from client reference (Paid Ads Academy):
    navy / orange / sky-blue stripes / teal script accent
    =========================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;0,7..72,700;1,7..72,500;1,7..72,600&family=Karla:wght@400;500;600;700&family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;0,7..72,700;1,7..72,500;1,7..72,600&family=Karla:wght@400;500;600;700&display=swap');
 
 :root {
   --navy: #1E2A47;
@@ -26,7 +26,6 @@
 
   --font-display: 'Literata', serif;
   --font-body: 'Karla', sans-serif;
-  --font-script: 'Alex Brush', cursive;
 
   --sp-1: 0.5rem;
   --sp-2: 1rem;
@@ -84,14 +83,9 @@ a {
 
 img { max-width: 100%; display: block; }
 
-.accent-script {
-  font-family: var(--font-script);
-  font-weight: 400;
-  color: var(--teal);
-  font-size: 1.25em;
-  line-height: 1;
-  display: inline-block;
-  transform: translateY(0.05em);
+.accent-ink {
+  font-style: italic;
+  color: var(--teal-dark);
 }
 
 .eyebrow {
@@ -211,8 +205,7 @@ img { max-width: 100%; display: block; }
   font-size: 1.15rem;
   color: var(--navy);
 }
-.brand svg { width: auto; height: 42px; flex-shrink: 0; }
-.brand-word-wild { font-family: var(--font-script); color: var(--teal); font-size: 1.5rem; margin-right: 0.15rem; }
+.brand img { width: auto; height: 46px; flex-shrink: 0; }
 
 .nav-links {
   display: flex;
@@ -401,13 +394,7 @@ img { max-width: 100%; display: block; }
   padding: var(--sp-6) 0 var(--sp-7);
   background: var(--cream);
 }
-.seal-section svg { width: 150px; height: 150px; }
-.seal-wordmark {
-  font-family: var(--font-script);
-  color: var(--teal);
-  font-size: 1.9rem;
-  margin-top: var(--sp-1);
-}
+.seal-section img { width: 200px; height: auto; margin: 0 auto; border-radius: 8px; }
 .seal-caption {
   font-size: 0.78rem;
   letter-spacing: 0.16em;
@@ -570,7 +557,7 @@ img { max-width: 100%; display: block; }
 }
 .bio-media .photo-frame { aspect-ratio: 3/4; }
 .bio-name { font-size: clamp(2rem, 3.6vw, 2.8rem); margin: var(--sp-2) 0 0.25rem; }
-.bio-name .accent-script { font-size: 1.15em; }
+.bio-name .accent-ink { font-size: 1em; }
 .bio-role { color: var(--teal-dark); font-weight: 600; margin-bottom: var(--sp-3); display: block; }
 .bio-copy p { color: var(--ink-soft); margin-bottom: var(--sp-2); max-width: 60ch; }
 .bio-quote {
@@ -661,7 +648,7 @@ img { max-width: 100%; display: block; }
   padding: var(--sp-6);
   box-shadow: 0 30px 60px -20px rgba(0,0,0,0.4);
 }
-.cta-card .accent-script { font-size: 2rem; display: block; margin-bottom: 0.25rem; }
+.cta-card .accent-ink { font-family: var(--font-display); font-size: 1.15rem; display: block; margin-bottom: 0.5rem; }
 .cta-card h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); margin-bottom: var(--sp-2); }
 .cta-card p { color: var(--ink-soft); margin-bottom: var(--sp-4); }
 
@@ -681,6 +668,7 @@ footer {
 }
 .footer-brand { max-width: 300px; }
 .footer-brand .brand { color: var(--white); }
+.footer-brand .brand img { height: 36px; }
 .footer-brand p { color: rgba(255,255,255,0.65); font-size: 0.9rem; margin-top: var(--sp-2); }
 .footer-col h4 {
   color: var(--white);
