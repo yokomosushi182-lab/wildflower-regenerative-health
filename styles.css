@@ -1,27 +1,25 @@
 /* ===========================================================
    Wildflower Regenerative Health — Design Tokens
-   Palette carried over from client reference (Paid Ads Academy):
-   navy / orange / sky-blue stripes / teal script accent
+   Palette pulled directly from the client's logo: mustard-gold,
+   soft mint teal, and warm cream. No colors outside this family.
    =========================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;0,7..72,700;1,7..72,500;1,7..72,600&family=Karla:wght@400;500;600;700&display=swap');
 
 :root {
-  --navy: #1E2A47;
-  --navy-dark: #131C33;
-  --navy-soft: #2E3B5E;
-  --orange: #B5471F;
-  --orange-dark: #8F3717;
-  --orange-bright: #E8643A;
-  --teal: #3F9C87;
-  --teal-dark: #2E7864;
-  --teal-darker: #205848;
-  --sky: #CFE6F0;
-  --sky-light: #EAF5F9;
-  --cream: #FBF7EF;
-  --cream-dark: #F3ECDD;
-  --ink: #1E2A47;
-  --ink-soft: #4B5773;
+  --ink: #2B2A22;
+  --ink-soft: #55523F;
+  --deep: #1B2E25;
+  --deep-dark: #101C16;
+  --deep-soft: #24382C;
+  --mustard: #786519;
+  --mustard-dark: #5C4F14;
+  --mustard-bright: #D4BC39;
+  --teal: #4FAE91;
+  --teal-dark: #276A57;
+  --teal-darker: #1D4E40;
+  --cream: #ECEACF;
+  --cream-dark: #E3DEB8;
   --white: #FFFFFF;
 
   --font-display: 'Literata', serif;
@@ -38,7 +36,7 @@
 
   --radius: 6px;
   --radius-lg: 20px;
-  --shadow-card: 0 12px 30px -14px rgba(30, 42, 71, 0.35);
+  --shadow-card: 0 12px 30px -14px rgba(43, 42, 34, 0.35);
   --max-width: 1240px;
 }
 
@@ -68,7 +66,7 @@ body {
 
 h1, h2, h3, h4 {
   font-family: var(--font-display);
-  color: var(--navy);
+  color: var(--ink);
   margin: 0;
   line-height: 1.1;
   font-weight: 600;
@@ -136,30 +134,30 @@ img { max-width: 100%; display: block; }
 }
 
 .btn-primary {
-  background: var(--orange);
+  background: var(--mustard);
   color: var(--white);
-  box-shadow: 0 10px 22px -10px rgba(201, 79, 41, 0.65);
+  box-shadow: 0 10px 22px -10px rgba(120, 101, 25, 0.55);
 }
-.btn-primary:hover { background: var(--orange-dark); transform: translateY(-2px); }
+.btn-primary:hover { background: var(--mustard-dark); transform: translateY(-2px); }
 
 .btn-outline {
   background: transparent;
-  border-color: var(--navy);
-  color: var(--navy);
+  border-color: var(--ink);
+  color: var(--ink);
 }
-.btn-outline:hover { background: var(--navy); color: var(--white); transform: translateY(-2px); }
+.btn-outline:hover { background: var(--ink); color: var(--white); transform: translateY(-2px); }
 
 .btn-outline-light {
   background: transparent;
   border-color: var(--white);
   color: var(--white);
 }
-.btn-outline-light:hover { background: var(--white); color: var(--navy); }
+.btn-outline-light:hover { background: var(--white); color: var(--ink); }
 
 .btn-teal {
   background: var(--teal-dark);
   color: var(--white);
-  box-shadow: 0 10px 22px -10px rgba(46, 120, 100, 0.6);
+  box-shadow: 0 10px 22px -10px rgba(39, 106, 87, 0.6);
 }
 .btn-teal:hover { background: var(--teal-darker); transform: translateY(-2px); }
 
@@ -170,7 +168,7 @@ img { max-width: 100%; display: block; }
 
 /* ===== Announcement bar ===== */
 .announce {
-  background: var(--orange);
+  background: var(--mustard);
   color: var(--white);
   text-align: center;
   font-size: 0.82rem;
@@ -183,7 +181,7 @@ img { max-width: 100%; display: block; }
 /* ===== Nav ===== */
 .nav {
   background: var(--cream);
-  border-bottom: 1px solid rgba(30, 42, 71, 0.08);
+  border-bottom: 1px solid rgba(43, 42, 34, 0.1);
   position: sticky;
   top: 0;
   z-index: 50;
@@ -203,7 +201,7 @@ img { max-width: 100%; display: block; }
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 1.15rem;
-  color: var(--navy);
+  color: var(--ink);
 }
 .brand img { width: auto; height: 46px; flex-shrink: 0; }
 
@@ -226,7 +224,7 @@ img { max-width: 100%; display: block; }
   position: absolute;
   left: 0; right: 0; bottom: -3px;
   height: 2px;
-  background: var(--orange-bright);
+  background: var(--mustard-bright);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.2s ease;
@@ -248,7 +246,7 @@ img { max-width: 100%; display: block; }
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--navy);
+  background: var(--ink);
   margin: 5px 0;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
@@ -269,50 +267,29 @@ img { max-width: 100%; display: block; }
     right: 0;
     background: var(--cream);
     padding: var(--sp-3) var(--sp-4) var(--sp-4);
-    border-bottom: 1px solid rgba(30,42,71,0.08);
+    border-bottom: 1px solid rgba(43, 42, 34, 0.1);
   }
   .nav.open .nav-cta .btn-outline {
     display: inline-flex;
   }
 }
 
-/* ===== Striped backgrounds ===== */
-.stripes-sky {
-  background-color: var(--sky-light);
-  background-image: repeating-linear-gradient(
-    -45deg,
-    var(--sky) 0px,
-    var(--sky) 22px,
-    var(--sky-light) 22px,
-    var(--sky-light) 44px
-  );
-}
-
+/* ===== Divider ===== */
 .stripe-divider {
   height: 44px;
   background-image: repeating-linear-gradient(
     -45deg,
-    var(--orange-bright) 0px,
-    var(--orange-bright) 26px,
-    var(--orange) 26px,
-    var(--orange) 52px
+    var(--mustard-bright) 0px,
+    var(--mustard-bright) 26px,
+    var(--mustard) 26px,
+    var(--mustard) 52px
   );
-}
-.stripe-divider.blue {
-  background-image: repeating-linear-gradient(
-    -45deg,
-    var(--sky) 0px,
-    var(--sky) 26px,
-    var(--navy) 26px,
-    var(--navy) 27px,
-    var(--sky) 27px
-  );
-  background-color: var(--sky-light);
 }
 
 /* ===== Hero ===== */
 .hero {
   padding: var(--sp-7) 0 var(--sp-8);
+  background: var(--cream);
 }
 .hero .wrap {
   display: grid;
@@ -354,7 +331,7 @@ img { max-width: 100%; display: block; }
 .photo-placeholder {
   width: 100%;
   height: 100%;
-  background: linear-gradient(160deg, var(--sky) 0%, var(--teal) 130%);
+  background: linear-gradient(160deg, var(--cream-dark) 0%, var(--teal) 130%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -367,7 +344,7 @@ img { max-width: 100%; display: block; }
   bottom: var(--sp-2);
   left: var(--sp-2);
   right: var(--sp-2);
-  background: rgba(30,42,71,0.72);
+  background: rgba(43, 42, 34, 0.72);
   color: var(--white);
   font-size: 0.72rem;
   letter-spacing: 0.04em;
@@ -429,7 +406,7 @@ img { max-width: 100%; display: block; }
 
 /* ===== Trust / modality bar ===== */
 .trust-bar {
-  background: var(--navy);
+  background: var(--deep);
   color: var(--cream);
   padding: var(--sp-4) 0;
 }
@@ -445,7 +422,7 @@ img { max-width: 100%; display: block; }
   font-size: 0.72rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--sky);
+  color: var(--mustard-bright);
   width: 100%;
   text-align: center;
   margin-bottom: var(--sp-2);
@@ -461,6 +438,7 @@ img { max-width: 100%; display: block; }
 /* ===== Services ===== */
 .services {
   padding: var(--sp-7) 0;
+  background: var(--cream-dark);
 }
 .services-head {
   text-align: center;
@@ -483,12 +461,12 @@ img { max-width: 100%; display: block; }
   align-items: center;
   padding: var(--sp-5);
   margin-bottom: var(--sp-4);
-  border: 2px solid var(--orange-bright);
+  border: 2px solid var(--mustard-bright);
 }
 .service-featured .service-icon { width: 84px; height: 84px; }
 .service-featured .service-tag {
   display: inline-block;
-  background: var(--orange);
+  background: var(--mustard);
   color: var(--white);
   font-size: 0.68rem;
   font-weight: 700;
@@ -509,7 +487,7 @@ img { max-width: 100%; display: block; }
 .service-featured li { margin-bottom: 0.2rem; }
 .service-note {
   font-size: 0.78rem;
-  color: var(--orange-dark);
+  color: var(--mustard-dark);
   font-style: italic;
   margin-top: var(--sp-2);
 }
@@ -547,7 +525,7 @@ img { max-width: 100%; display: block; }
 /* ===== Full bio section ===== */
 .bio {
   padding: var(--sp-7) 0;
-  background: var(--cream-dark);
+  background: var(--cream);
 }
 .bio .wrap {
   display: grid;
@@ -578,7 +556,7 @@ img { max-width: 100%; display: block; }
   font-family: var(--font-display);
   font-style: normal;
   font-size: 3.5rem;
-  color: var(--sky);
+  color: var(--cream-dark);
   line-height: 1;
 }
 
@@ -596,7 +574,7 @@ img { max-width: 100%; display: block; }
 .testimonial-card {
   max-width: 640px;
   margin: 0 auto;
-  border: 2px dashed var(--sky);
+  border: 2px dashed var(--mustard-bright);
   border-radius: var(--radius-lg);
   padding: var(--sp-5);
 }
@@ -604,7 +582,7 @@ img { max-width: 100%; display: block; }
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: var(--sky);
+  background: var(--cream-dark);
   margin: 0 auto var(--sp-3);
   display: flex;
   align-items: center;
@@ -614,7 +592,7 @@ img { max-width: 100%; display: block; }
   font-family: var(--font-display);
   font-style: italic;
   font-size: 1.2rem;
-  color: var(--navy);
+  color: var(--ink);
   margin-bottom: var(--sp-2);
 }
 .testimonial-card .attribution {
@@ -628,7 +606,7 @@ img { max-width: 100%; display: block; }
 .cta-banner {
   position: relative;
   padding: var(--sp-8) 0;
-  background: linear-gradient(160deg, var(--navy) 0%, var(--navy-soft) 100%);
+  background: linear-gradient(160deg, var(--deep) 0%, var(--deep-soft) 100%);
   overflow: hidden;
   text-align: center;
 }
@@ -637,7 +615,7 @@ img { max-width: 100%; display: block; }
   position: absolute;
   inset: 0;
   background-image: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.06) 0, transparent 40%),
-                     radial-gradient(circle at 85% 80%, rgba(232,100,58,0.15) 0, transparent 45%);
+                     radial-gradient(circle at 85% 80%, rgba(212,188,57,0.18) 0, transparent 45%);
 }
 .cta-banner .wrap { position: relative; }
 .cta-card {
@@ -654,7 +632,7 @@ img { max-width: 100%; display: block; }
 
 /* ===== Footer ===== */
 footer {
-  background: var(--navy-dark);
+  background: var(--deep-dark);
   color: var(--cream);
   padding: var(--sp-6) 0 var(--sp-4);
 }
@@ -680,7 +658,7 @@ footer {
 }
 .footer-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; }
 .footer-col a { color: rgba(255,255,255,0.75); font-size: 0.92rem; }
-.footer-col a:hover { color: var(--sky); }
+.footer-col a:hover { color: var(--mustard-bright); }
 .footer-bottom {
   display: flex;
   flex-wrap: wrap;
