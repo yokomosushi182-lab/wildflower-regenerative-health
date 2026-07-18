@@ -90,7 +90,7 @@ img { max-width: 100%; display: block; }
   font-size: 0.8rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--teal-dark);
+  color: var(--ink);
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -481,7 +481,7 @@ img { max-width: 100%; display: block; }
 .service-featured li { margin-bottom: 0.2rem; }
 .service-note {
   font-size: 0.78rem;
-  color: var(--teal-dark);
+  color: var(--ink);
   margin-top: var(--sp-2);
 }
 
@@ -529,13 +529,13 @@ img { max-width: 100%; display: block; }
 .bio-media .photo-frame { aspect-ratio: 3/4; }
 .bio-name { font-size: clamp(2rem, 3.6vw, 2.8rem); margin: var(--sp-2) 0 0.25rem; }
 .bio-name .accent-ink { font-size: 1em; }
-.bio-role { color: var(--teal-dark); font-weight: 600; margin-bottom: var(--sp-3); display: block; }
+.bio-role { color: var(--ink); font-weight: 600; margin-bottom: var(--sp-3); display: block; }
 .bio-copy p { color: var(--ink-soft); margin-bottom: var(--sp-2); max-width: 60ch; }
 .bio-quote {
   position: relative;
   font-family: var(--font-display);
   font-size: 1.35rem;
-  color: var(--teal-dark);
+  color: var(--ink);
   padding-left: 2.4rem;
   margin: var(--sp-5) 0;
   max-width: 52ch;
